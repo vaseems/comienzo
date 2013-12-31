@@ -1,0 +1,29 @@
+apply plugin: 'war'
+apply plugin: 'jetty'
+apply plugin: 'eclipse-wtp'
+
+sourceCompatibility = '1.7'
+
+repositories {
+	maven { url "http://repo1.maven.org/maven2/"}
+	maven { url "http://repo.springsource.org/libs-milestone" }
+}
+
+
+dependencies {
+   providedCompile 'javax.servlet:servlet-api:2.5'
+   compile 'org.springframework:spring-webmvc:3.2.2.RELEASE'
+   runtime 'javax.servlet:jstl:1.1.2'
+   compile 'org.springframework:spring-webmvc:3.2.2.RELEASE'
+   compile 'org.slf4j:slf4j-api:1.7.5'
+   compile 'org.slf4j:slf4j-log4j12:1.7.5'
+   compile 'org.slf4j:jcl-over-slf4j:1.7.5'
+   compile 'log4j:log4j:1.2.17'
+   compile 'commons-collections:commons-collections:3.2.1@jar'
+   compile 'commons-lang:commons-lang:2.6@jar'
+}
+
+/* Change context path (base url). otherwise defaults to name of project */
+jettyRun.httpPort = 9000
+jettyRunWar.contextPath = 'siddharth'
+
