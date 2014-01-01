@@ -7,7 +7,7 @@
 	
 	<title>Login Page</title>
 	
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/foundation.css" />
 </head>
 
 <body>
@@ -25,13 +25,13 @@
 			<input type="password" id="password" name="password"/>
 			<div class="clear"></div>
 			
-			<label for="remember_me" style="padding: 0;">Remember me?</label>
+			<label for="remember_me">Remember me?</label>
 			<input type="checkbox" id="remember_me" style="position: relative; top: 3px; margin: 0; " name="remember_me"/>
 			<div class="clear"></div>
+			<br/>
 			
-			<br />
-			
-			<input type="submit" style="margin: -20px 0 0 287px;" class="button" name="commit" value="Log in"/>	
+						<label>Forgot Password</label>
+			<input type="submit"  class="button" name="commit" value="Log in"/>	
 		</fieldset>
 	</form>
 	

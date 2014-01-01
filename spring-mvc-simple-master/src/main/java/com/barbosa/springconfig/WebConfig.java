@@ -1,4 +1,4 @@
-package com.codetutr.springconfig;
+package com.barbosa.springconfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
