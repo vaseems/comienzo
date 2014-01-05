@@ -3,11 +3,25 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="viewport" content="width:device-width" />
+    <meta name="viewport" content="width:device-width" />
+	
+	<script>
+    function toTest(no)
+    {
+    	
+    	return "1";
+    }
+    
+    test( "hello test", function() {
+    	  ok( 1 == "1", "Passed!" );
+    	  
+    	});
+    </script>
 	
 	<title>Login Page</title>
 	
-	<link rel="stylesheet" type="text/css" href="css/foundation.css" />
+	<link rel="stylesheet" type="text/css" href="view/css/foundation.css" />
+	<script src="view/js/qunit.js"></script>
 </head>
 
 <body>
@@ -30,11 +44,12 @@
 			<div class="clear"></div>
 			<br/>
 			
-						<label>Forgot Password</label>
+			<label>Forgot Password</label>
 			<input type="submit"  class="button" name="commit" value="Log in"/>	
 		</fieldset>
 	</form>
 	
 </body>
+
 
 </html>

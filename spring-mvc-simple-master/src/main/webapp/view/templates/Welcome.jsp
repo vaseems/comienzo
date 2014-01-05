@@ -1,3 +1,15 @@
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<html>
+<head>
+<title>
+Welcome
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link rel="stylesheet" type="text/css" href="/resources/css/foundation.css"/>
+	
+</head>
+<body>
 <div class="row">
     <div class="small-4 columns">
         <h2>This is a sidebar</h2>
@@ -39,3 +51,5 @@
     <li><img src="../img/photo3.png"></li>
     <li><img src="../img/photo4.png"></li>
 </ul>
+</body>
+</html>
