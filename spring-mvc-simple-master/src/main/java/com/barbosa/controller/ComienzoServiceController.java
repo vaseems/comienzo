@@ -14,12 +14,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
  *
  */
 @Controller
+
 public class ComienzoServiceController {
 	
-	Logger log = LoggerFactory.getLogger(SampleController.class);
-	@RequestMapping("start")
-	public String loadHomePage(Model m) {
-		log.debug("llllll",m);
+	Logger log = LoggerFactory.getLogger(ComienzoServiceController.class);
+	@RequestMapping("/comienzo")
+	public String welcome(Model m) {
+		System.out.println("llllll"+m);
+		log.debug("llllll"+m);
+
 		m.addAttribute("comienzo", "start");
 		return "Welcome";
 	}

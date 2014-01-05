@@ -12,7 +12,7 @@ public class SampleController {
 	@RequestMapping("home")
 	public String loadHomePage(Model m) {
 		log.debug("llllll",m);
-		m.addAttribute("name", "CodeTutr");
+		m.addAttribute("Controller", "First");
 		return "home";
 	}
 }

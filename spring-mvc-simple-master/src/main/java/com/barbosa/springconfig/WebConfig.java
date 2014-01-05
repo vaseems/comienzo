@@ -14,7 +14,7 @@ public class WebConfig {
 	@Bean
 	public InternalResourceViewResolver viewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-		resolver.setPrefix("/WEB-INF/view/templates/");
+		resolver.setPrefix("/view/templates/");
 		resolver.setSuffix(".jsp");
 		return resolver;
 	}

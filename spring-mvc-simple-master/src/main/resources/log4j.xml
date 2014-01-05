@@ -51,7 +51,7 @@
 		<level value="info" />
 	</logger>
 
-	<logger name="com.ugam">
+	<logger name="com.barbosa">
 		<level value="debug" />
 	</logger>
 

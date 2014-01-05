@@ -3,7 +3,8 @@ apply plugin: 'jetty'
 apply plugin: 'eclipse-wtp'
 
 sourceCompatibility = '1.7'
-
+jettyRun.httpPort = 9000
+jettyRunWar.contextPath = ''
 repositories {
 	maven { url "http://repo1.maven.org/maven2/"}
 	maven { url "http://repo.springsource.org/libs-milestone" }
@@ -24,6 +25,6 @@ dependencies {
 }
 
 /* Change context path (base url). otherwise defaults to name of project */
-jettyRun.httpPort = 9000
-jettyRunWar.contextPath = 'siddharth'
+
+
 
